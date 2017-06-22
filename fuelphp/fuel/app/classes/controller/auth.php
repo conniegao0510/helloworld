@@ -7,7 +7,7 @@ class Controller_Auth extends Controller_Base
         parent::before();
 
         $stringURI = \Uri::string();
-        var_dump($stringURI);
+        //var_dump($stringURI);
 
         if ($stringURI != 'auth/signin')
         {
@@ -20,7 +20,7 @@ class Controller_Auth extends Controller_Base
 	        }
         }
 
-         \Debug::dump($this->settings);
+         //\Debug::dump($this->settings);
 
         
     }
