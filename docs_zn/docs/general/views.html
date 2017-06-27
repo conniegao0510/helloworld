@@ -48,11 +48,11 @@
 
 			<h3 id="what_is_a_view">What is a view?</h3>
 
-			<p>Views are files that present data to the browser. These files enable the separation of logic and presentation for your application. Views are typically html, javascript, or css but can contain variables passed into them from the controller.</p>
+			<p>视图是将数据呈现给浏览器的文件。 这些文件可以让您的应用程序分离逻辑和图像。 视图通常是html，javascript或css，但可以包含从控制器传入它们的变量。</p>
 
 			<h3>Creating a view</h3>
 
-			<p>In FuelPHP, Views are located in the <kbd>APPPATH/views</kbd> directory. Views can be located in subdirectories. Views are named by their directory path from the fuel/app/views and the file name, so a view file located <em>fuel/app/views/user/join.php</em> would be named <kbd>user/join</kbd>.</p>
+			<p>在FuelPHP, 试图位于<kbd>APPPATH/views</kbd>目录。视图可以位于子目录中。视图被命名为它们目录路径fuel/app/views加上文件名，因此，位于 <em>fuel/app/views/user/join.php</em> 的视图文件会被命名为 <kbd>user/join</kbd>.</p>
 
 			<p>Example:</p>
 
@@ -68,7 +68,7 @@
 
 			<h3 id="using_views">Using views</h3>
 
-			<p>Views in the Fuel framework are very flexible. You can create a single view and nest views within other views. This can be done multiple ways.</p>
+			<p>Fuel框架中的视图非常灵活。你可以创建一个简单的视图并在其他视图中嵌套视图。这可以通过多种方式完成。</p>
 
 			<p><strong>Example View (fuel/app/views/home/index.php):</strong></p>
 			<pre class="html"><code>&lt;html&gt;
@@ -87,12 +87,12 @@
 {
 	public function action_index()
 	{
-		$data = array(); //stores variables going to views
+		$data = array(); //给视图存储变量
 
 		$data['username'] = 'Joe14';
 		$data['title'] = 'Home';
 
-		//assign the view to browser output
+		//给浏览器输出视图
 		return View::forge('home/index', $data);
 	}
 }</code></pre>

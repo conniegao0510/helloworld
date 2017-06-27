@@ -7,7 +7,7 @@ class Controller_Auth extends Controller_Base
         parent::before();
 
         $stringURI = \Uri::string();
-        //var_dump($stringURI);
+        var_dump($stringURI);
 
         if ($stringURI != 'auth/signin')
         {
@@ -26,12 +26,10 @@ class Controller_Auth extends Controller_Base
     }
 
 
-    public function action_signin()
+    public function action_signin($name = 'guest')
     {
-        
         echo \Date::time_ago(time() - 600);   //Date::time()  = time()
-
-    	//echo \Date::forge(1294176140, "Europe/London")->get_timezone();
+        //echo \Date::forge(1294176140, "Europe/London")->get_timezone();
 
     	//echo \Crypt::encode('Connie');  //Salt
     }

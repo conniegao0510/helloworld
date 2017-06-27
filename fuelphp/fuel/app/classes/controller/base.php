@@ -9,6 +9,6 @@ class Controller_Base extends Controller
     {
         parent::before();
 
-        $this->settings = "Connie's";
+        $this->settings = "Guest's";
     }
 }
